@@ -6,7 +6,7 @@ import image2 from './assets/fs2.png';
 import { MdNavigateNext } from 'react-icons/md';
 import Link from 'next/link';
 
-const page = () => {
+const Page = () => {
     const [activeScreen, setActiveScreen] = useState(1);
 
     const handleNext = () => {
@@ -51,4 +51,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;
