@@ -6,7 +6,7 @@ import { GrFormPrevious } from 'react-icons/gr'
 import Calendar from '@/app/components/Calender'
 import plus from '../../assets/plus.png'
 
-const page = () => {
+const Page = () => {
     const [showNoteForm, setShowNoteForm] = useState(false);
     const [selectedTime, setSelectedTime] = useState('');
     const [noteText, setNoteText] = useState('');
@@ -76,4 +76,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
