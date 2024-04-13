@@ -1,16 +1,22 @@
 "use client"
-import React, { useState } from 'react';
-import Image from 'next/image';
-import image1 from './assets/fs1.png';
-import image2 from './assets/fs2.png';
-import { MdNavigateNext } from 'react-icons/md';
-import Link from 'next/link';
+import React, { useState } from 'react'
+import Image from 'next/image'
+import image1 from './assets/fs1.png'
+import image2 from './assets/fs2.png'
+import { MdNavigateNext } from 'react-icons/md'
+import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
-const Page = () => {
+const page = () => {
+    const router = useRouter();
     const [activeScreen, setActiveScreen] = useState(1);
 
     const handleNext = () => {
-        setActiveScreen((prevScreen) => prevScreen === 1 ? 2 : 1);
+        if (activeScreen === 2) {
+            router.push('/Auth');
+        } else {
+            setActiveScreen((prevScreen) => prevScreen + 1);
+        }
     };
 
     return (
@@ -51,4 +57,4 @@ const Page = () => {
     );
 };
 
-export default Page;
+export default page;
