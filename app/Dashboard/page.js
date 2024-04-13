@@ -8,7 +8,7 @@ import workout2 from '../assets/upperbodyworkout.png'
 import workout3 from '../assets/workout2.png'
 import graph from '../assets/graph.png'
 
-const page = () => {
+const Page = () => {
 
     const [isOn, setIsOn] = useState(false);
 
@@ -79,4 +79,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
