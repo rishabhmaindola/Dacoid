@@ -9,7 +9,7 @@ import { IoMdEyeOff } from 'react-icons/io'
 import google from '../assets/google.png'
 import facebook from '../assets/facebook.png'
 
-const page = () => {
+const Page = () => {
 
     const router = useRouter();
     const [authToggle, setAuthToggle] = useState(true);
@@ -116,4 +116,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
